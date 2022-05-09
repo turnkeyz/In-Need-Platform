@@ -32,7 +32,7 @@ app.use(cors())
 
 // setting up mongoose DB connection
 mongoose
-  .connect("mongodb+srv://appuser:cis43390@cluster0.ehvtv.mongodb.net/CIS4339?retryWrites=true&w=majority")   // read environment varibale from .env
+  .connect("MONGO_URL")   // read environment varibale from .env
 
   .then(() => {
     console.log("Database connection Success!");
